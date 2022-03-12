@@ -1,0 +1,8 @@
+{
+    "headers" : {
+        "home": "english_home",
+        "products": "english_products",
+        "about_us": "english_about us",
+        "contact_us": "english_contact us"
+    }
+}
