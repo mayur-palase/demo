@@ -5,9 +5,6 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from '../features/about-us/about-us.component';
-import { TranslatePipe } from '../shared/pipes/translate.pipe';
-
-
 
 @NgModule({
   declarations: [
@@ -15,8 +12,7 @@ import { TranslatePipe } from '../shared/pipes/translate.pipe';
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    AboutUsComponent,
-    TranslatePipe
+    AboutUsComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -25,7 +21,6 @@ import { TranslatePipe } from '../shared/pipes/translate.pipe';
     NavbarComponent,
     HomeComponent,
     AboutUsComponent,
-    TranslatePipe
   ],
 })
 export class CoreModule {}

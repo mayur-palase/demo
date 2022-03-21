@@ -14,17 +14,17 @@ export class HttpService {
     return this.makeHttpRequest(url, RequestMethod.GET, httpOptions);
   }
 
-  public makeHttpPostRequest(url: string, data: any, httpOptions?: any) {
+  public makeHttpPostRequest(url: string, data: any, httpOptions?: any): Observable<any> {
     return this.makeHttpRequest(url, RequestMethod.POST, data, httpOptions);
   }
 
   makeHttpRequest(url, requestMethod, data?, httpOptions?): Observable<any> {
 
-    let options = {};
+    const options = {};
     if (data) {
       // console.log('http service data = ', data);
-      const headers= new HttpHeaders()
-        .set('content-type', 'application/json')
+      const headers = new HttpHeaders()
+        .set('content-type', 'application/json');
       options['body'] = data;
       options['headers'] = headers;
     }

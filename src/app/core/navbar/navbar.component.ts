@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslatePipe } from 'src/app/shared/pipes/translate.pipe';
+// import { TranslatePipe } from 'src/app/shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-navbar',
