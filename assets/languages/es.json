@@ -1,0 +1,8 @@
+{
+    "headers" : {
+        "home": "spanish_home",
+        "products": "spanish_products",
+        "about_us": "spanish_about us",
+        "contact_us": "spanish_contact us"
+    }
+}

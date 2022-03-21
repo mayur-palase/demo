@@ -1,0 +1,8 @@
+{
+    "headers" : {
+        "home": "french_home",
+        "products": "french_products",
+        "about_us": "french_about us",
+        "contact_us": "french_contact us"
+    }
+}
