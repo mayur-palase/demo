@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Production URL
 
-https://mayur-palase.github.io/demo/posts
+https://mayur-palase.github.io/demo/
