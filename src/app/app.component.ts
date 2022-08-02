@@ -12,7 +12,36 @@ import { Subject } from 'rxjs';
 export class AppComponent implements OnInit, AfterViewInit {
   messageToChildComponent: string;
   messageFromChildComponent: string;
-  // userActivity;
+  comments = [];
+  userReply = false;
+  replies = [];
+  keys = [];
+  data = [
+    {
+      name: 'A',
+      age: 1,
+      address: {
+        village: 'Pune',
+        pin: 411033
+      }
+    },
+    {
+      name: 'B',
+      age: 2,
+      address: {
+        village: 'Mahud',
+        pin: 413306
+      }
+    }
+  ];
+
+  ngOnInit(): void {
+    // this.router.navigateByUrl('posts');
+    // this.messageToChildComponent = 'Message from parent component';
+    this.data.forEach(() => {
+
+    });
+  }
 
   // userInactive: Subject<any> = new Subject();
   constructor(private router: Router, private cdref: ChangeDetectorRef) {
@@ -20,11 +49,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     // console.log(`App component loaded`);
     // this.setTimeout();
     // this.userInactive.subscribe(() => console.log('user has been inactive for 3s'));
-  }
-
-  ngOnInit(): void {
-    this.router.navigateByUrl('posts');
-    this.messageToChildComponent = 'Message from parent component';
   }
 
   getData(data): void {

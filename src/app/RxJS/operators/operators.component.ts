@@ -21,6 +21,7 @@ import { takeUntil } from 'rxjs/operators';
   templateUrl: './operators.component.html',
   styleUrls: ['./operators.component.css']
 })
+
 export class OperatorsComponent implements OnInit {
 
   constructor() { }

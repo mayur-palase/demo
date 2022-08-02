@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../services/http.service';
 import { API } from '../shared/constants/api.constants';
-import { person } from '../shared/constants/utility.constants';
+import { Person } from '../shared/constants/utility.constants';
 
 @Component({
   selector: 'app-posts',
@@ -9,7 +9,7 @@ import { person } from '../shared/constants/utility.constants';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  data: person[];
+  data: Person[];
   constructor(private httpService: HttpService) { }
 
   ngOnInit(): void {
@@ -17,7 +17,7 @@ export class PostsComponent implements OnInit {
     // this.postData();
   }
 
-  getData() {
+  getData(): void{
     // return this.httpService.makeHttpGetRequest( '/api/' + API.USERS ).pipe(response => response);
     this.httpService.makeHttpGetRequest( '/api/' + API.USERS ).subscribe(
       (res) => {
@@ -28,11 +28,11 @@ export class PostsComponent implements OnInit {
       (error) => {
         console.log(error.error);
       }
-    )
+    );
   }
 
-  postData() {
-    let data = {
+  postData(): void {
+    const data = {
       id: 5,
       name: 'Mohini',
       age: 25,

@@ -1,4 +1,10 @@
-<!-- <app-home></app-home> -->
+<div  *ngFor="let d of data">
+    <p *ngFor="">
+        <span></span> 
+    </p>
+</div>
+
+<!-- <app-home></app-home>  -->
 <!-- <h1>Hello world</h1> -->
 <!-- <app-posts></app-posts> -->
 <!-- <h1>{{messageFromChildComponent}}</h1>
@@ -9,7 +15,31 @@
 <h1>
     <a routerLink="about">About</a>
 </h1>
-<router-outlet></router-outlet> -->
+ -->
 
-<h1>App component</h1>
-<app-home></app-home>
+<!-- <app-navbar></app-navbar>
+<h1>App component</h1> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <form>
+    <input type="text" #userInput><br><br>
+    <input type="button" value="submit" (click)="submitComment(userInput.value)">
+</form>
+
+<div>
+    <ul id="comment" *ngFor="let comment of comments">
+        <li>
+            {{ comment }} &nbsp;&nbsp;&nbsp;
+            <input type="button" value="submit" (click)="enableComment()">&nbsp;&nbsp;
+            <form *ngIf="userReply">
+                <input type="text" #insertCommentToReply>&nbsp;&nbsp;
+                <input type="button" value="submit" (click)="replyComment(insertCommentToReply)">
+            </form>
+            <ng-container *ngIf="replies.length > 0">
+                <ul *ngFor="let reply of replies">
+                    <li>{{reply}}</li>
+                </ul>
+            </ng-container>
+        </li>
+    </ul>
+</div> -->

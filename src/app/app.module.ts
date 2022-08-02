@@ -13,32 +13,43 @@ import { AboutUsComponent } from './features/about-us/about-us.component';
 import { HttpInterceptorService } from './interceptors/http-interceptor.service';
 import { OperatorsComponent } from './RxJS/operators/operators.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProductComponent } from './components/product/product.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: PostsComponent,
-    pathMatch: 'full'
-  },
-  {
-    path: 'posts',
-    component: PostsComponent,
-    pathMatch: 'full'
-    // resolve: { products: SessionResolverService }
-  },
-  {
-    path: 'about',
-    component: AboutUsComponent,
-    pathMatch: 'full'
-    // resolve: { products: SessionResolverService }
-  },
-];
+// const routes: Routes = [
+//   {
+//     path: '',
+//     component: HomeComponent,
+//     pathMatch: 'full'
+//   },
+//   {
+//     path: 'posts',
+//     component: PostsComponent,
+//     pathMatch: 'full'
+//     // resolve: { products: SessionResolverService }
+//   },
+//   {
+//     path: 'about',
+//     component: AboutUsComponent,
+//     pathMatch: 'full'
+//     // resolve: { products: SessionResolverService }
+//   },
+//   {
+//     path: 'product',
+//     component: ProductComponent,
+//     pathMatch: 'full'
+//   }
+// ];
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    OperatorsComponent
+    OperatorsComponent,
+    AboutComponent,
+    ContactComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -47,9 +58,8 @@ const routes: Routes = [
     HttpClientModule,
     NgbModule,
     CoreModule,
-    RouterModule.forRoot(routes)
+    // RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule],
   providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass: HttpInterceptorService,
