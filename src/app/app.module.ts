@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductComponent } from './components/product/product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // const routes: Routes = [
 //   {
@@ -58,6 +59,7 @@ import { ProductComponent } from './components/product/product.component';
     HttpClientModule,
     NgbModule,
     CoreModule,
+    BrowserAnimationsModule,
     // RouterModule.forRoot(routes)
   ],
   providers: [{
